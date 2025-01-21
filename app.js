@@ -15,6 +15,18 @@ function agregarAmigo(){
   console.log(secret_friend);
 }
 
+
+
+function actualizar_lista_amigos(){
+    let lista=document.querySelector(`#listaAmigos`);
+    lista.innerHTML=``;
+    for(let i=0;i<secret_friend.length;i++){
+        let titulo=document.createElement(`li`);
+        titulo.innerHTML=secret_friend[i];
+        document.querySelector(`#listaAmigos`).appendChild(titulo);
+    }
+}
+
 function verificar_repetidos(A){
     for(let i=0;i<=secret_friend.length;i++){
         if(A==secret_friend[i]){
@@ -27,5 +39,3 @@ function verificar_repetidos(A){
 function clear_box(){
     document.querySelector("#amigo").value=``;
 }
-
-

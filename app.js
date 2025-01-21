@@ -1,5 +1,5 @@
 let secret_friend=[];
-
+//secret friend
 
 function agregarAmigo(){
   let friend_user=document.getElementById(`amigo`).value;

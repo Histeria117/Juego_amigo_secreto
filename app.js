@@ -2,9 +2,9 @@ let secret_friend=[];
 //secret friend
 
 function agregarAmigo(){
-    
   let friend_user=document.getElementById(`amigo`).value;
    if(verificar_valido()){
+      
         if(verificar_repetidos(friend_user)){
             secret_friend.push(friend_user);
             clear_box();
@@ -14,7 +14,8 @@ function agregarAmigo(){
             
         }
         console.log(secret_friend);
-     }else{
+       }
+       else{
         alert(`Ingresa un nombre valido `);
      }
   
@@ -57,3 +58,4 @@ function verificar_valido(){
      }
     return true; 
 }
+

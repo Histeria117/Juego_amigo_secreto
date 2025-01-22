@@ -7,18 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Amigo Secreto</title>
+    <title>Juego Amigo Secreto</title>
 </head>
 
 <body>
     <main class="main-content">
         <header class="header-banner">
-            <h1 class="main-title">Amigo Secreto</h1>
+            <h1 class="main-title">Juego del amigo secreto</h1>
             <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
         </header>
         
         <section class="input-section">
-            <h2 class="section-title">Digite el nombre de sus amigos</h2>
+            <h2 class="section-title">Digite el nombre de sus amigos<nav></nav>->No se puede repetir los nombres<nav></nav>->No se pueden introducir espacios vacios al final<nav></nav> 
+                Cuando termine de escribir el nombre de sus amigos seleccione sortear amigo y descubra quien es el amigo secreto</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
                 <button class="button-add" onclick="agregarAmigo(),actualizar_lista_amigos()">Añadir</button>
